@@ -1,0 +1,99 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+body {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 2px 2px 4px gray;
+  justify-content: center;
+  height: 90vh;
+  width: 99%;
+  /* border: 2px solid red; */
+  background-color: black;
+  cursor: context-menu;
+}
+
+#main_Container {
+  /* border: 2px solid black; */
+  padding: 15px;
+  background-color: antiquewhite;
+  box-shadow: -1px -1px 20px aqua;
+}
+
+.row {
+  margin: 8px 0;
+}
+
+.row input {
+  background-image: linear-gradient(
+    to right,
+    rgb(169, 157, 157),
+    rgb(71, 66, 66)
+  );
+  color: white;
+  width: 286px;
+  font-size: 22px;
+  margin: 0;
+  padding: 10px 5px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  text-align: end;
+  cursor: not-allowed;
+}
+
+.button {
+  font-size: 18px;
+  width: 66px;
+  padding: 20px;
+  margin: 0 3px;
+  background-image: linear-gradient(
+    to right,
+    rgb(169, 157, 157),
+    rgb(71, 66, 66)
+  );
+  color: whitesmoke;
+  border: 2px solid rgb(76, 70, 70);
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+/* hide * and shwo X */
+#X {
+  font-size: 0px;
+}
+
+#X::before {
+  content: "X";
+  font-size: 18px;
+  font-weight: 800;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 359px) {
+  #main_Container {
+    padding: 5px;
+    margin-top: 40px;
+  }
+  .row {
+    margin: 5px 0;
+  }
+  .row input {
+    width: 266px;
+    font-size: 22px;
+    margin: 0;
+    padding: 10px 5px;
+  }
+  .button {
+    font-size: 18px;
+    width: 60px;
+    padding: 15px 5px;
+    margin: 0 3px;
+  }
+}
